@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light align-content-center ">
+            <div class="container">
+                <div class="logoDiv mx-5 ">
+                    <a href="#" style="cursor: pointer;">
+                        <img src="images/logo.svg" alt="" style="width: 200px;" class="navbar-brand">
+                    </a>
+                </div>
+                <!-- Navbar Toggle Button -->
+
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="toggleMenu">
+                    <img src="images/icon-close.svg" alt="" style="padding: 20px; font-size: 20px;" class="toggleClose">
+                    <div class="toggleNav">
+                        <a class="nav-link" href="#">Collections</a>
+                        <a class="nav-link" href="#">Men</a>
+                        <a class="nav-link" href="#">Women</a>
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbarRight d-flex align-items-center gap-2">
+                    <div class="bucketIcon">
+                        <a href="" id="bucket">
+                            <img src="images/icon-cart.svg" alt="" class="bucket">
+                        </a>
+                        <p class="bucketCount">0</p>
+                    </div>
+                    <a href="" id="avatar"><img src="images/image-avatar.png" alt="" class="avatar"></a>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="basketCardEmpty">
+            <div class="basketCardtitle">
+                <h5>Cart</h5>
+            </div>
+            <hr style="color: #ccc;">
+            <p style="text-align: center; margin-top: 50px">Your card is empty</p>
+        </div>
+        <div class="basketCardFull">
+
+
+            <div class="basketCardEmpty">
+                <div class="basketCardtitle">
+                    <h5>Cart</h5>
+                </div>
+                <hr style="color: #ccc;">
+                <p>Your card is empty</p>
+            </div>
+
+            <div class="basketCardtitle">
+                <h5>Cart</h5>
+            </div>
+            <hr style="color: #ccc;">
+            <div class="cardImgAndContent d-flex">
+                <img src="images/image-product-1-thumbnail.jpg" alt="" class="cardImg">
+                <div class="cardContentAndPrice ms-3 align-items-center">
+                    <p class="cardContent"> Fall limited edition sneakers. $125.00 x <span
+                            class="cardProductCount">x</span>
+                        <span style="font-weight: 900;" class="resultPrice">$000</span>
+                    </p>
+                </div>
+                <div class="deleteIcon">
+                    <img src="images/icon-delete.svg" alt="">
+                </div>
+            </div>
+            <div class="btnCheck">
+                <button class="btnAdd d-flex align-items-center gap-3">Check out</button>
+            </div>
+
+        </div>
+
+        <hr class="divider mt-3">
+
+
+        <div class="content mt-5 mx-5 d-flex justify-content-around flex-wrap">
+            <div class="imgContent w-50 col-6">
+                <a href=""><img src="images/image-product-1.jpg" alt="" class="windowImage"></a>
+                <div class="imgContentMini d-flex mt-3 gap-4 ">
+                    <img src="images/image-product-1.jpg" alt="" class="miniImage" id="active">
+                    <img src="images/image-product-2.jpg" alt="" class="miniImage non-active">
+                    <img src="images/image-product-3.jpg" alt="" class="miniImage non-active">
+                    <img src="images/image-product-4.jpg" alt="" class="miniImage non-active">
+                </div>
+            </div>
+
+            <div class="textContent mt-5 w-50 ">
+                <h6 class="companyName" class="mb-3">SNEAKER COMPANY</h6>
+                <h1 class="font-monospace mt-3 fallLimited" style="font-weight: bold;">Fall Limited Edition Sneakers
+                </h1>
+                <p style="color: #999898;" class=" contentLong">These low-profile sneakers are your perfect casual
+                    wear
+                    companion. Featuring
+                    a
+                    durable rubber outer
+                    sole, they’ll withstand everything the weather can offer.</p>
+                <div class="price d-flex gap-4 align-items-center">
+                    <h3 style="letter-spacing: 1px; font-weight: bold;">$125.00</h3>
+                    <h6 class="discount">50%</h6>
+                </div>
+                <h5 style="text-decoration: line-through; color: #999898; letter-spacing: 1px;" class="through">
+                    $250.00</h5>
+                <div class="addCartSection d-flex gap-4 align-items-center mt-5">
+                    <div class="quantity d-flex align-items-baseline gap-4">
+                        <a href="" id="minus"><img src="images/icon-minus.svg" alt="" class="minus"></a>
+                        <h5 class="productCount">0</h5>
+                        <a href="" id="plus"><img src="images/icon-plus.svg" alt="" class="plus"></a>
+                    </div>
+                    <div class="btn">
+                        <button class="btnAdd d-flex align-items-center gap-3"><img src="images/icon-cart.svg"
+                                class="iconCart" alt="">Add to
+                            cart</button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="container mt-5 linear">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <a href="">
+                    <img src="images/icon-close.svg" alt="" class="linearClose">
+                </a>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/image-product-1.jpg" class="d-block w-25">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/image-product-2.jpg" class="d-block w-25">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/image-product-3.jpg" class="d-block w-25">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/image-product-4.jpg" class="d-block w-25">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
