@@ -26,23 +26,21 @@ miniImages.forEach((miniImage) => {
   });
 });
 
-let count = localStorage.getItem("numberValue") || 0;
-function updateNumber() {
-  productCount.textContent = count;
-}
-
+let count = 0;
 plus.addEventListener("click", function (e) {
   e.preventDefault();
   count++;
-  localStorage.setItem("numberValue", count);
-  updateNumber();
+  productCount.textContent = count;
 });
 
 minus.addEventListener("click", function (e) {
   e.preventDefault();
-  count--;
-  localStorage.setItem("numberValue", count);
-  updateNumber();
+  if (count <= 0) {
+    productCount.textContent = "0";
+  } else {
+    count--;
+    productCount.textContent = count;
+  }
 });
 
 updateNumber();
